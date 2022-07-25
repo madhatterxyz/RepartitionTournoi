@@ -5,11 +5,11 @@ VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepartitionTournoi", "RepartitionTournoi.csproj", "{182893A7-AFB3-4C02-8303-86FFDB0C5261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepartitionTournoi.DAL", "..\RepartitionTournoi.DAL\RepartitionTournoi.DAL.csproj", "{D1ECCFDF-F66F-4BCC-A0F3-CCA89859D490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepartitionTournoi.DAL", "RepartitionTournoi.DAL\RepartitionTournoi.DAL.csproj", "{D06E55C8-09A3-476D-91F9-F373C608B6AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepartitionTournoi.Models", "..\RepartitionTournoi.Models\RepartitionTournoi.Models.csproj", "{CBE6C9AD-6ACB-4DD8-9138-56395821301E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepartitionTournoi.Domain", "RepartitionTournoi.Domain\RepartitionTournoi.Domain.csproj", "{4099D9F6-2EB8-4749-A15B-2C1F985EFACD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepartitionTournoi.Domain", "..\RepartitionTournoi.Domain\RepartitionTournoi.Domain.csproj", "{C9FC501E-2CCF-4753-93DB-57CADF00AE71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepartitionTournoi.Models", "RepartitionTournoi.Models\RepartitionTournoi.Models.csproj", "{2051C976-68F7-4D61-81B9-2B8A412C3CA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{182893A7-AFB3-4C02-8303-86FFDB0C5261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{182893A7-AFB3-4C02-8303-86FFDB0C5261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{182893A7-AFB3-4C02-8303-86FFDB0C5261}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1ECCFDF-F66F-4BCC-A0F3-CCA89859D490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1ECCFDF-F66F-4BCC-A0F3-CCA89859D490}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1ECCFDF-F66F-4BCC-A0F3-CCA89859D490}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1ECCFDF-F66F-4BCC-A0F3-CCA89859D490}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBE6C9AD-6ACB-4DD8-9138-56395821301E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBE6C9AD-6ACB-4DD8-9138-56395821301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBE6C9AD-6ACB-4DD8-9138-56395821301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBE6C9AD-6ACB-4DD8-9138-56395821301E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9FC501E-2CCF-4753-93DB-57CADF00AE71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9FC501E-2CCF-4753-93DB-57CADF00AE71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9FC501E-2CCF-4753-93DB-57CADF00AE71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9FC501E-2CCF-4753-93DB-57CADF00AE71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D06E55C8-09A3-476D-91F9-F373C608B6AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D06E55C8-09A3-476D-91F9-F373C608B6AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D06E55C8-09A3-476D-91F9-F373C608B6AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D06E55C8-09A3-476D-91F9-F373C608B6AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4099D9F6-2EB8-4749-A15B-2C1F985EFACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4099D9F6-2EB8-4749-A15B-2C1F985EFACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4099D9F6-2EB8-4749-A15B-2C1F985EFACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4099D9F6-2EB8-4749-A15B-2C1F985EFACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2051C976-68F7-4D61-81B9-2B8A412C3CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2051C976-68F7-4D61-81B9-2B8A412C3CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2051C976-68F7-4D61-81B9-2B8A412C3CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2051C976-68F7-4D61-81B9-2B8A412C3CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
