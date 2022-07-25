@@ -1,0 +1,9 @@
+[submodule "RepartitionTournoi.Models"]
+	path = RepartitionTournoi.Models
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Models.git
+[submodule "RepartitionTournoi.Domain"]
+	path = RepartitionTournoi.Domain
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Domain.git
+[submodule "RepartitionTournoi.DAL"]
+	path = RepartitionTournoi.DAL
+	url = https://github.com/madhatterxyz/RepartitionTournoi.DAL.git
