@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fQ0p3FLzZXN41VtGD7HlyTHVB2FARIywU1Ny4qQIvadEsWMZ38e90gP/B8iH+uF/bcWOBxUqDK6p2eLPPMl2ZQ==",
+  "dgSpecHash": "ykZqvdbKg/O2ffaAN1CSBiEP4KtgNz1ffInQdU6VIcu56I4z0j8Mp4Tt+N0BzZDydHFvEu/95Hcpq5FAFWbYKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicolas.PC-NICOLAS\\Source\\Repos\\RepartitionTournoi\\RepartitionTournoi.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\Nicolas.PC-NICOLAS\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Nicolas.PC-NICOLAS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Nicolas.PC-NICOLAS\\.nuget\\packages\\objectscomparer\\1.4.1\\objectscomparer.1.4.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
