@@ -17,6 +17,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
 using IServiceScope serviceScope = host.Services.CreateScope();
 IServiceProvider provider = serviceScope.ServiceProvider;
 
+
 //Init
 ICompositionPresentation compositionPresentation = provider.GetRequiredService<ICompositionPresentation>();
 
