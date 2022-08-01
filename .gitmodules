@@ -13,3 +13,6 @@
 [submodule "RepartitionTournoi.Services"]
 	path = RepartitionTournoi.Services
 	url = https://github.com/madhatterxyz/RepartitionTournoi.Services
+[submodule "RepartitionTournoi.Presentation.Web"]
+	path = RepartitionTournoi.Presentation.Web
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Presentation.Web
