@@ -1,4 +1,4 @@
-﻿using RepartitionTournoi.Domain;
+﻿using RepartitionTournoi.Domain.Interfaces;
 using RepartitionTournoi.Models;
 
 namespace RepartitionTournoi
