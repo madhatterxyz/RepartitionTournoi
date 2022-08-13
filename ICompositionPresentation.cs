@@ -4,8 +4,9 @@ namespace RepartitionTournoi
 {
     public interface ICompositionPresentation
     {
-        void DisplayAllCompositions();
-        void DisplayInfoParJoueur();
-        void DisplayScoreBoard();
+        Task<List<CompositionDTO>> InitCompositions();
+        Task DisplayAllCompositions();
+        Task DisplayInfoParJoueur();
+        Task DisplayScoreBoard();
     }
 }

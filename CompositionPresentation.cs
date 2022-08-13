@@ -1,4 +1,4 @@
-﻿using RepartitionTournoi.Domain;
+﻿using RepartitionTournoi.Domain.Interfaces;
 using RepartitionTournoi.Models;
 
 namespace RepartitionTournoi
@@ -6,19 +6,25 @@ namespace RepartitionTournoi
     public class CompositionPresentation : ICompositionPresentation
     {
         private readonly IJoueurDomain _joueurDomain;
-        private readonly List<Composition> _compositions;
+        private readonly ICompositionDomain _compositionDomain;
+        private List<CompositionDTO> _compositions;
         public CompositionPresentation(IJoueurDomain joueurDomain, ICompositionDomain compositionDomain)
         {
             _joueurDomain = joueurDomain;
-            _compositions = compositionDomain.GetCompositions();
+            _compositionDomain = compositionDomain;
         }
-        public void DisplayAllCompositions()
+        public async Task<List<CompositionDTO>> InitCompositions()
         {
-            Console.WriteLine($"Nombre de joueurs = {_joueurDomain.All().Count()}, Composition des groupes :");
-            foreach (Composition composition in _compositions)
+            return await _compositionDomain.InitCompositions();
+        }
+        public async Task DisplayAllCompositions()
+        {
+            var joueurs = await _joueurDomain.GetAll();
+            Console.WriteLine($"Nombre de joueurs = {joueurs.Count()}, Composition des groupes :");
+            foreach (CompositionDTO composition in _compositions)
             {
                 Console.WriteLine($"Jeu : {composition.Jeu.Nom}");
-                foreach (Match match in composition.Matchs)
+                foreach (MatchDTO match in composition.Matchs)
                 {
                     Console.WriteLine($"    Match {match.Id}");
                     Console.WriteLine($"        {string.Join(", ", match.Scores.Select(x => $"{x.Joueur.Nom} {x.Joueur.Prénom}"))}");
@@ -26,18 +32,18 @@ namespace RepartitionTournoi
                 Console.WriteLine();
             }
         }
-        public void DisplayInfoParJoueur()
+        public async Task DisplayInfoParJoueur()
         {
-            foreach (Joueur joueur in _joueurDomain.All())
+            foreach (JoueurDTO joueur in await _joueurDomain.GetAll())
             {
                 Console.WriteLine($"{joueur.Prénom} {joueur.Nom}");
-                foreach (Composition composition in _compositions)
+                foreach (CompositionDTO composition in _compositions)
                 {
                     Console.WriteLine($"    Jeu {composition.Jeu.Id} : {composition.Jeu.Nom}");
-                    foreach (Match groupe in composition.Matchs.Where(y => y.Scores.Any(z => z.Joueur == joueur)))
+                    foreach (MatchDTO groupe in composition.Matchs.Where(y => y.Scores.Any(z => z.Joueur == joueur)))
                     {
                         Console.WriteLine($"        Tu affronteras les joueurs suivants :");
-                        foreach (Score adversaire in groupe.Scores.Where(x => x.Joueur != joueur))
+                        foreach (ScoreDTO adversaire in groupe.Scores.Where(x => x.Joueur != joueur))
                         {
                             Console.WriteLine($"            {adversaire.Joueur.Prénom} {adversaire.Joueur.Nom} {adversaire.Joueur.Téléphone}");
                         }
@@ -46,14 +52,14 @@ namespace RepartitionTournoi
                 }
             }
         }
-        public void DisplayScoreBoard()
+        public async Task DisplayScoreBoard()
         {
             Console.WriteLine(String.Format("|{0,10}|{1,10}|{2,10}|", "Prénom", "Nom", "Score"));
             Console.WriteLine("|__________|__________|__________|");
-            foreach (Joueur joueur in _joueurDomain.All())
+            foreach (JoueurDTO joueur in await _joueurDomain.GetAll())
             {
                 int score = _compositions.Sum(x => x.Matchs.Sum(y => y.Scores.Where(z => z.Joueur == joueur).Sum(s => s.Points)));
-                Console.WriteLine(String.Format("|{0,10}|{1,10}|{2,10}|", joueur.Prénom, joueur.Nom, score)); 
+                Console.WriteLine(String.Format("|{0,10}|{1,10}|{2,10}|", joueur.Prénom, joueur.Nom, score));
             }
         }
     }

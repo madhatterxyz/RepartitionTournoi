@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RepartitionTournoi;
 using RepartitionTournoi.Domain;
+using RepartitionTournoi.Domain.Interfaces;
 
 using IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices((_, services) =>
@@ -16,6 +17,7 @@ using IHost host = Host.CreateDefaultBuilder(args)
     .Build();
 using IServiceScope serviceScope = host.Services.CreateScope();
 IServiceProvider provider = serviceScope.ServiceProvider;
+
 
 //Init
 ICompositionPresentation compositionPresentation = provider.GetRequiredService<ICompositionPresentation>();

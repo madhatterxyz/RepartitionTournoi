@@ -9,19 +9,26 @@
 
   <ItemGroup>
     <Compile Remove="RepartitionTournoi.DAL\**" />
+    <Compile Remove="RepartitionTournoi.Domain.Unit.Tests\**" />
     <Compile Remove="RepartitionTournoi.Domain\**" />
     <Compile Remove="RepartitionTournoi.Models\**" />
+    <Compile Remove="RepartitionTournoi.Services\**" />
     <EmbeddedResource Remove="RepartitionTournoi.DAL\**" />
+    <EmbeddedResource Remove="RepartitionTournoi.Domain.Unit.Tests\**" />
     <EmbeddedResource Remove="RepartitionTournoi.Domain\**" />
     <EmbeddedResource Remove="RepartitionTournoi.Models\**" />
+    <EmbeddedResource Remove="RepartitionTournoi.Services\**" />
     <None Remove="RepartitionTournoi.DAL\**" />
+    <None Remove="RepartitionTournoi.Domain.Unit.Tests\**" />
     <None Remove="RepartitionTournoi.Domain\**" />
     <None Remove="RepartitionTournoi.Models\**" />
+    <None Remove="RepartitionTournoi.Services\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="RestSharp" Version="108.0.1" />
   </ItemGroup>
 
   <ItemGroup>

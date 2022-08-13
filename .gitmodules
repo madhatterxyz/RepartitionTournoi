@@ -7,3 +7,12 @@
 [submodule "RepartitionTournoi.DAL"]
 	path = RepartitionTournoi.DAL
 	url = https://github.com/madhatterxyz/RepartitionTournoi.DAL.git
+[submodule "RepartitionTournoi.Domain.Unit.Tests"]
+	path = RepartitionTournoi.Domain.Unit.Tests
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Domain.Unit.Tests
+[submodule "RepartitionTournoi.Services"]
+	path = RepartitionTournoi.Services
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Services
+[submodule "RepartitionTournoi.Presentation.Web"]
+	path = RepartitionTournoi.Presentation.Web
+	url = https://github.com/madhatterxyz/RepartitionTournoi.Presentation.Web
